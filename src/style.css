@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.background-effect {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f0f0f0; /* Adjust background color as needed */
+}
+
+.slanting-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgb(97, 97, 207), rgb(105, 126, 194) ,rgb(169, 169, 219),rgb(177, 232, 232),rgb(184, 229, 229),rgb(190, 232, 232),rgb(224, 129, 224),rgb(184, 237, 237),rgb(154, 227, 227));
+  transform: skewY(-17deg) translateY(-17%); /* Move the right side upward */
+  transform-origin: top left;
+  z-index: 1;
+}
+
+.input-container {
+  position: relative;
+  z-index: 3;
+}
+
+.ray-effect,
+.flex {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+input,
+button {
+  z-index: 4;
+  position: relative;
+}
+.navbar {
+  position: relative;
+  width: 100%; /* Ensure navbar takes full width */
+  margin: 0;   /* Remove any margins */
+  padding: 0;  /* Remove any padding */
+  z-index: 3;
+}
+
+/* Ensure no padding or margins on navbar links */
+.navbar-nav {
+  padding: 0; /* Remove padding from navbar */
+  margin: 0;  /* Remove margin from navbar */
+}
+
